@@ -6,6 +6,7 @@ gnome-exe-thumbnailer (0.9.3-2~) UNRELEASED; urgency=medium
        not generic executable files like .py and .jar (which I mistakenly
        wrote).
      - Update Vcs-Git and Vcs-Browser fields to Alioth.
+  * Fix Lintian warning dep5-copyright-license-name-not-unique.
 
  -- James Lu <glolol1@hotmail.com>  Sat, 06 Jun 2015 12:07:34 -0700
 
