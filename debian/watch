@@ -1,0 +1,2 @@
+version=3
+http://archive.ubuntu.com/ubuntu/pool/universe/g/gnome-exe-thumbnailer gnome-exe-thumbnailer_(.+?)-.+?\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
