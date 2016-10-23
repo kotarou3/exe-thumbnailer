@@ -1,2 +1,4 @@
-version=3
-http://archive.ubuntu.com/ubuntu/pool/universe/g/gnome-exe-thumbnailer gnome-exe-thumbnailer_(.+?)-.+?\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%<project>-$1.tar.gz%" \
+   https://github.com/gnome-exe-thumbnailer/gnome-exe-thumbnailer/tags \
+   (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
