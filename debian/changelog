@@ -1,4 +1,4 @@
-gnome-exe-thumbnailer (0.9.4-1) UNRELEASED; urgency=medium
+gnome-exe-thumbnailer (0.9.4-1) unstable; urgency=medium
 
   [ Jan Nekvasil ]
   * New upstream version
@@ -14,7 +14,7 @@ gnome-exe-thumbnailer (0.9.4-1) UNRELEASED; urgency=medium
     with Cinnamon (and possibly other GNOME-like desktops), when Nautilus
     isn't installed.
 
- -- James Lu <bitflip3@gmail.com>  Sat, 22 Oct 2016 22:19:59 -0700
+ -- James Lu <bitflip3@gmail.com>  Sat, 12 Nov 2016 21:12:32 -0800
 
 gnome-exe-thumbnailer (0.9.3-2) unstable; urgency=medium
 
