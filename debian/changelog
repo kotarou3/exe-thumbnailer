@@ -10,6 +10,9 @@ gnome-exe-thumbnailer (0.9.4-1) UNRELEASED; urgency=medium
   * Update my email.
   * Bump standards version to 3.9.8 - no changes needed.
   * Update watch file and homepage to the new repository on GitHub.
+  * debian/patches: add fallback-thumbnail-limit.patch to fix compatibility
+    with Cinnamon (and possibly other GNOME-like desktops), when Nautilus
+    isn't installed.
 
  -- James Lu <bitflip3@gmail.com>  Sat, 22 Oct 2016 22:19:59 -0700
 
