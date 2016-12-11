@@ -13,6 +13,10 @@ Package: gnome-exe-thumbnailer
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, icoutils, imagemagick, libglib2.0-bin
+# wine and wine(32|64)-tools are needed for .lnk and .msi thumbnailing
+# wine provides winepath and cscript, while wine(32|64)-tools provides winedump
+Recommends: wine,
+            wine64-tools | wine32-tools | wine64-development-tools | wine32-development-tools
 Description: Wine .exe and other executable thumbnailer for GNOME
  gnome-exe-thumbnailer is a thumbnailer for Windows executable files
  that shows the embedded icons of .exe, .lnk, .msi, and .dll files when

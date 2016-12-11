@@ -1,3 +1,10 @@
+gnome-exe-thumbnailer (0.9.4-2) unstable; urgency=medium
+
+  * Add recommends on wine and wine-tools, as these are needed for .lnk and
+    .msi thumbnailing to work
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 11 Dec 2016 12:55:32 -0800
+
 gnome-exe-thumbnailer (0.9.4-1) unstable; urgency=medium
 
   [ Jan Nekvasil ]
