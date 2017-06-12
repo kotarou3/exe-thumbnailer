@@ -1,3 +1,10 @@
+gnome-exe-thumbnailer (0.9.4-3) UNRELEASED; urgency=medium
+
+  [ Stephen Kitt ]
+  * Fix the filename mangling in debian/watch.
+
+ -- Stephen Kitt <skitt@debian.org>  Mon, 12 Jun 2017 09:14:45 +0200
+
 gnome-exe-thumbnailer (0.9.4-2) unstable; urgency=medium
 
   * Add recommends on wine and wine-tools, as these are needed for .lnk and
