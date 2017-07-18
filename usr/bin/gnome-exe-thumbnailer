@@ -185,7 +185,13 @@ case "$THEME" in
 esac
 
 INPUTFILE_SIZE=$(du -b "$INPUTFILE" | cut -f1 -d$'\t')
+# Try to fetch the max. size for thumbnailed executables from gsettings, but fall back to 10485760 bytes if that fails.
 THUMBNAIL_LIMIT=$(gsettings get org.gnome.nautilus.preferences thumbnail-limit | cut -f2 -d' ')
+
+if [[ ! "$THUMBNAIL_LIMIT" ]]
+then
+	THUMBNAIL_LIMIT=10485760
+fi
 
 
 if [[ ${INPUTFILE##*.} = 'msi' ]]
@@ -350,25 +356,10 @@ fi
 # Get the version number:
 if [[ ${INPUTFILE##*.} = 'msi' ]]
 then
-	# Look for the ProductVersion property if user has the Microsoft (R) Windows Script Host installed:
-	if which wine && grep -v 'Wine placeholder DLL' $HOME/.wine/drive_c/windows/system32/cscript.exe
+	# Look for the ProductVersion property using msitools' msiinfo if present
+	if which msiinfo
 	then
-		# Workaround wine bug #19799: cscript crashes if you call WScript.Arguments(0)
-		# http://bugs.winehq.org/show_bug.cgi?id=19799
-		<<< "
-			Dim WI, DB, View, Record
-			Set WI = CreateObject(\"WindowsInstaller.Installer\")
-			Set DB = WI.OpenDatabase(\"$INPUTFILE\",0)
-			Set View = DB.OpenView(\"SELECT Value FROM Property WHERE Property = 'ProductVersion'\")
-			View.Execute
-			Wscript.Echo View.Fetch.StringData(1)
-		" iconv -f utf8 -t unicode > $TEMPFILE1.vbs
-
-		VERSION=$(
-			DISPLAY=NONE wine cscript.exe //E:vbs //NoLogo Z:\\tmp\\${TEMPFILE1##*/}.vbs 2>/dev/null \
-			| egrep -o '^[0-9]+\.[0-9]+(\.[0-9][0-9]?)?(beta)?'
-		)
-
+		VERSION=$(msiinfo export "$INPUTFILE" 'Property' | grep 'ProductVersion' | cut -f 2)
 	else
 		# Try to get the version number from extended file properties at least:
 		VERSION=$(
@@ -403,7 +394,7 @@ fi
 if [ "$VERSION" ]
 then
 	convert -font -*-clean-medium-r-*-*-6-*-*-*-*-*-*-* \
-	-background transparent -fill white label:"$VERSION" \
+	-background '#00001090' -fill white label:"$VERSION" \
 	-trim -bordercolor '#00001090' -border 2 \
 	-fill '#00001048' \
 	-draw $'color 0,0 point\ncolor 0,8 point' -flop \
