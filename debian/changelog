@@ -1,3 +1,13 @@
+gnome-exe-thumbnailer (0.9.4-2+deb9u1) stretch-security; urgency=high
+
+  * Add patch switch-to-msiinfo.patch:
+    - Switch to msitools' msiinfo for ProductVersion fetching, replacing the
+      insecure VBScript-based parsing as described at
+      http://news.dieweltistgarnichtso.net/posts/gnome-thumbnailer-msi-fail.html
+      (Closes: #868705)
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 18 Jul 2017 09:21:48 +0800
+
 gnome-exe-thumbnailer (0.9.4-2) unstable; urgency=medium
 
   * Add recommends on wine and wine-tools, as these are needed for .lnk and
