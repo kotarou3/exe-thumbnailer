@@ -8,7 +8,7 @@ gnome-exe-thumbnailer (0.9.5-1) unstable; urgency=high
     - Switch to msitools' msiinfo for ProductVersion fetching, replacing the
       insecure VBScript-based parsing as described at
       http://news.dieweltistgarnichtso.net/posts/gnome-thumbnailer-msi-fail.html
-      (Closes: #868705) (LP: #651610)
+      (Closes: #868705; LP: #651610; CVE-2017-11421).
   * Add Enhances: caja, tumbler (>= 0.1.92~), nautilus, nemo
     These are some of the many file managers/thumbnailer programs that support
     desktop thumbnailers like exe-thumbnailer, and I have verified (at some
