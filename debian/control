@@ -14,8 +14,10 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, icoutils, imagemagick, libglib2.0-bin
 # wine and wine(32|64)-tools are needed for .lnk and .msi thumbnailing
-# wine provides winepath and cscript, while wine(32|64)-tools provides winedump
-Recommends: wine,
+# wine provides winepath, while wine(32|64)-tools provides winedump
+# mistools provides msiinfo to fetch version tags on .msi files
+Recommends: msitools,
+            wine,
             wine64-tools | wine32-tools | wine64-development-tools | wine32-development-tools
 Enhances: caja, tumbler (>= 0.1.92~), nautilus, nemo
 Description: Wine .exe and other executable thumbnailer for GNOME
