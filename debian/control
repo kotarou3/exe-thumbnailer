@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Wine Party <pkg-wine-party@lists.alioth.debian.org>
 Uploaders: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: https://github.com/gnome-exe-thumbnailer/gnome-exe-thumbnailer
 Vcs-Git: https://anonscm.debian.org/git/pkg-wine/gnome-exe-thumbnailer.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-wine/gnome-exe-thumbnailer.git/
