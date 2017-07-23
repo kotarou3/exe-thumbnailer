@@ -1,4 +1,4 @@
-gnome-exe-thumbnailer (0.9.4-2+deb9u1) stretch-security; urgency=high
+gnome-exe-thumbnailer (0.9.4-2+deb9u1) stretch; urgency=high
 
   * Add patch switch-to-msiinfo.patch:
     - Switch to msitools' msiinfo for ProductVersion fetching, replacing the
@@ -7,7 +7,7 @@ gnome-exe-thumbnailer (0.9.4-2+deb9u1) stretch-security; urgency=high
       (Closes: #868705)
   * Add msitools to recommends; it is used to fetch .msi version info.
 
- -- James Lu <bitflip3@gmail.com>  Tue, 18 Jul 2017 09:21:48 +0800
+ -- James Lu <bitflip3@gmail.com>  Sun, 23 Jul 2017 23:11:56 +0800
 
 gnome-exe-thumbnailer (0.9.4-2) unstable; urgency=medium
 
