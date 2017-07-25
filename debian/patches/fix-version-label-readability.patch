@@ -1,0 +1,20 @@
+Author: James Lu <james@overdrivenetworks.com>
+Subject: Fix readability of version labels by using a dark background colour
+ Previously, the version label used a transparent background, which would show
+ up as white text on white in many cases.
+Origin: upstream, https://github.com/gnome-exe-thumbnailer/gnome-exe-thumbnailer/commit/1cf4df81836985d9660f950287232b3255ee17bb
+
+Index: g-e-t/usr/bin/gnome-exe-thumbnailer
+===================================================================
+--- g-e-t.orig/usr/bin/gnome-exe-thumbnailer	2017-07-25 07:23:52.269571939 -0700
++++ g-e-t/usr/bin/gnome-exe-thumbnailer	2017-07-25 07:23:52.269571939 -0700
+@@ -403,7 +403,7 @@
+ if [ "$VERSION" ]
+ then
+ 	convert -font -*-clean-medium-r-*-*-6-*-*-*-*-*-*-* \
+-	-background transparent -fill white label:"$VERSION" \
++	-background '#00001090' -fill white label:"$VERSION" \
+ 	-trim -bordercolor '#00001090' -border 2 \
+ 	-fill '#00001048' \
+ 	-draw $'color 0,0 point\ncolor 0,8 point' -flop \
+

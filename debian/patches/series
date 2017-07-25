@@ -1,2 +1,3 @@
+fix-version-label-readability.patch
 switch-to-msiinfo.patch
 fallback-thumbnail-limit.patch
