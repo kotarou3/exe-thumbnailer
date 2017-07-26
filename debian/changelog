@@ -1,3 +1,11 @@
+gnome-exe-thumbnailer (0.9.3-2ubuntu0.16.04.1) xenial; urgency=medium
+
+  * Switch to msitools for .msi version parsing
+    (LP: #651610; CVE-2017-11421)
+    - Add msitools to Recommends.
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 26 Jul 2017 15:21:00 +0800
+
 gnome-exe-thumbnailer (0.9.3-2) unstable; urgency=medium
 
   * debian/control:
