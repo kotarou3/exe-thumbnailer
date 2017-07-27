@@ -7,9 +7,9 @@ Bug-Debian: https://bugs.debian.org/868705
 
 Index: gnome-exe-thumbnailer/usr/bin/gnome-exe-thumbnailer
 ===================================================================
---- gnome-exe-thumbnailer.orig/usr/bin/gnome-exe-thumbnailer	2017-07-18 09:14:28.425066264 +0800
-+++ gnome-exe-thumbnailer/usr/bin/gnome-exe-thumbnailer	2017-07-18 09:14:28.421066261 +0800
-@@ -350,25 +350,10 @@
+--- gnome-exe-thumbnailer.orig/usr/bin/gnome-exe-thumbnailer	2017-07-27 09:44:37.000000000 +0800
++++ gnome-exe-thumbnailer/usr/bin/gnome-exe-thumbnailer	2017-07-27 09:44:46.000000000 +0800
+@@ -292,25 +292,10 @@
  # Get the version number:
  if [[ ${INPUTFILE##*.} = 'msi' ]]
  then
