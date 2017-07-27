@@ -19,8 +19,11 @@ Depends: ${misc:Depends}, icoutils, imagemagick, libglib2.0-bin
 Recommends: msitools,
             wine,
             wine64-tools | wine32-tools | wine64-development-tools | wine32-development-tools
-Enhances: caja, tumbler (>= 0.1.92~), nautilus, nemo
-Description: Wine .exe and other executable thumbnailer for GNOME
+Enhances: caja, pcmanfm, tumbler (>= 0.1.92~), nautilus, nemo
+Description: Windows executable (.exe, etc.) thumbnailer for Linux desktops
  gnome-exe-thumbnailer is a thumbnailer for Windows executable files
  that shows the embedded icons of .exe, .lnk, .msi, and .dll files when
  available.
+ .
+ It supports any file manager that uses .thumbnailer entries, including
+ Nautilus, Caja, Nemo, Thunar (when tumbler is installed), and PCManFM.
