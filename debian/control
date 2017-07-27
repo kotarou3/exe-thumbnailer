@@ -23,5 +23,4 @@ Enhances: caja, tumbler (>= 0.1.92~), nautilus, nemo
 Description: Wine .exe and other executable thumbnailer for GNOME
  gnome-exe-thumbnailer is a thumbnailer for Windows executable files
  that shows the embedded icons of .exe, .lnk, .msi, and .dll files when
- available, while giving the user a hint that Wine will be used to open
- it.
+ available.
