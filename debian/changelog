@@ -1,10 +1,14 @@
-gnome-exe-thumbnailer (0.9.3-2ubuntu0.16.04.1) xenial; urgency=medium
+gnome-exe-thumbnailer (0.9.3-2ubuntu0.16.04.1) xenial-security; urgency=medium
 
-  * Switch to msitools for .msi version parsing
-    (LP: #651610; CVE-2017-11421)
-    - Add msitools to Recommends.
+  [ James Lu ]
+  * SECURITY UPDATE: Arbitrary code execution (LP: #651610)
+    - debian/patches/switch-to-msiinfo.patch: Switch to msitools' msiinfo for
+      ProductVersion fetching, replacing the insecure VBScript-based parsing
+    - debian/control: Add msitools to recommends; it is now used to fetch .msi
+      version info.
+    - CVE-2017-11421
 
- -- James Lu <bitflip3@gmail.com>  Wed, 26 Jul 2017 15:21:00 +0800
+ -- Tyler Hicks <tyhicks@canonical.com>  Fri, 04 Aug 2017 00:05:54 +0000
 
 gnome-exe-thumbnailer (0.9.3-2) unstable; urgency=medium
 
