@@ -20,6 +20,8 @@ Recommends: liblnk-utils,
             msitools,
             wine,
 Enhances: caja, pcmanfm, tumbler (>= 0.1.92~), nautilus, nemo
+Breaks: gnome-exe-thumbnailer (<< 0.10.0-1~)
+Replaces: gnome-exe-thumbnailer (<< 0.10.0-1~)
 Description: Windows executable (.exe, etc.) thumbnailer for Linux desktops
  exe-thumbnailer is a thumbnailer for Windows executable files
  that shows the embedded icons of .exe, .lnk, .msi, and .dll files when
@@ -27,3 +29,10 @@ Description: Windows executable (.exe, etc.) thumbnailer for Linux desktops
  .
  It supports any file manager that uses .thumbnailer entries, including
  Nautilus, Caja, Nemo, Thunar (when tumbler is installed), and PCManFM.
+
+Package: gnome-exe-thumbnailer
+Section: oldlibs/extra
+Depends: exe-thumbnailer
+Description: transitional dummy package for exe-thumbnailer
+ This is a transitional dummy package for exe-thumbnailer, which can be
+ safely removed.
