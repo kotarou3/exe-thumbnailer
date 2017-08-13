@@ -1,4 +1,4 @@
 version=4
-opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%gnome-exe-thumbnailer-$1.tar.gz%" \
-   https://github.com/gnome-exe-thumbnailer/gnome-exe-thumbnailer/tags \
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%exe-thumbnailer-$1.tar.gz%" \
+   https://github.com/exe-thumbnailer/exe-thumbnailer/tags \
    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate

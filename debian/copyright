@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: gnome-exe-thumbnailer
-Source: https://github.com/gnome-exe-thumbnailer/gnome-exe-thumbnailer
+Upstream-Name: exe-thumbnailer
+Source: https://github.com/exe-thumbnailer/exe-thumbnailer
 
 Files: *
 Copyright:

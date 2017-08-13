@@ -1,15 +1,15 @@
-Source: gnome-exe-thumbnailer
+Source: exe-thumbnailer
 Section: gnome
 Priority: optional
 Maintainer: Debian Wine Party <pkg-wine-party@lists.alioth.debian.org>
 Uploaders: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 4.0.0
-Homepage: https://github.com/gnome-exe-thumbnailer/gnome-exe-thumbnailer
+Homepage: https://github.com/exe-thumbnailer/exe-thumbnailer
 Vcs-Git: https://anonscm.debian.org/git/pkg-wine/gnome-exe-thumbnailer.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-wine/gnome-exe-thumbnailer.git/
 
-Package: gnome-exe-thumbnailer
+Package: exe-thumbnailer
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, icoutils, imagemagick, libglib2.0-bin
@@ -21,7 +21,7 @@ Recommends: msitools,
             wine64-tools | wine32-tools | wine64-development-tools | wine32-development-tools
 Enhances: caja, pcmanfm, tumbler (>= 0.1.92~), nautilus, nemo
 Description: Windows executable (.exe, etc.) thumbnailer for Linux desktops
- gnome-exe-thumbnailer is a thumbnailer for Windows executable files
+ exe-thumbnailer is a thumbnailer for Windows executable files
  that shows the embedded icons of .exe, .lnk, .msi, and .dll files when
  available.
  .
