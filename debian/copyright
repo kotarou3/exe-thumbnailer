@@ -7,14 +7,7 @@ Copyright:
  2010-2012,2015 Jan Nekvasil <jan.nekvasil@ryant.cz>
  2009-2010 Christian Dannie Storgaard <cybolic@gmail.com>
  2009-2012,2014 Scott Ritchie <scottritchie@ubuntu.com>
-License: LGPL-2.1+
-
-Files: debian/*
-Copyright:
- 2010-2012,2015 Jan Nekvasil <jan.nekvasil@ryant.cz>
- 2009-2010 Christian Dannie Storgaard <cybolic@gmail.com>
- 2009-2012,2014 Scott Ritchie <scottritchie@ubuntu.com>
- 2015-2016 James Lu <bitflip3@gmail.com>
+ 2015-2017 James Lu <bitflip3@gmail.com>
 License: LGPL-2.1+
 
 License: LGPL-2.1+
