@@ -1,3 +1,19 @@
+exe-thumbnailer (0.10.0-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Fix insecure /tmp usage caused by suffixed files (Closes: #868737)
+    - Prefer XDG_CACHE_HOME instead of the legacy ~/.thumbnails (LP: #1105796)
+    - Switch to lnkinfo for .lnk parsing. This adds liblnk-utils to recommends
+      in place of wine-tools.
+    - Updated Moka icon set, patch from Alfredo Hernández (LP: #1404744)
+  * New package name: gnome-exe-thumbnailer is now exe-thumbnailer
+    - Move watch file, homepage links to the new repository link
+  * Update years and authors in debian/copyright
+  * Removed debian/gnome-exe-thumbnailer.1; it is superseded by the manpage
+    provided upstream.
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 12 Aug 2017 18:23:36 -0700
+
 gnome-exe-thumbnailer (0.9.5-1) unstable; urgency=high
 
   [ Stephen Kitt ]
