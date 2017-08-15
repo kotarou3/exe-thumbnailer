@@ -34,7 +34,7 @@ Package: gnome-exe-thumbnailer
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: exe-thumbnailer
+Depends: ${misc:Depends}, exe-thumbnailer
 Description: transitional dummy package for exe-thumbnailer
  This is a transitional dummy package for exe-thumbnailer, which can be
  safely removed.
