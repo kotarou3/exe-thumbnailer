@@ -1,3 +1,10 @@
+exe-thumbnailer (0.10.0-2) unstable; urgency=medium
+
+  * Bump standards version to 4.1.0, no changes needed.
+  * Upload to unstable.
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 29 Aug 2017 14:45:09 -0700
+
 exe-thumbnailer (0.10.0-1) experimental; urgency=medium
 
   * New upstream release.
